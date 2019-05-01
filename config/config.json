@@ -1,1 +1,42 @@
-{}
+{
+  "theme": {
+    "slug": "wprig-test",
+    "name": "WP Rig Test Theme",
+    "author": "The WP Rig Contributors",
+    "PHPNamespace": "WP_Rig\\WP_Rig"
+  },
+  "dev": {
+    "browserSync": {
+      "live": true,
+      "proxyURL": "http://wprigtest.local/",
+      "bypassPort": "8181",
+      "https": false
+    },
+    "styles": {
+      "stage": 3,
+      "importFrom": [
+        "_custom-media.css"
+      ],
+      "features": {
+        "custom-media-queries": true,
+        "custom-properties": true,
+        "nesting-rules": true
+      }
+    },
+    "debug": {
+      "styles": true,
+      "scripts": false,
+      "phpcs": true
+    }
+  },
+  "export": {
+    "compress": true,
+    "generatePotFile": true,
+    "filesToCopy": [
+      "LICENSE",
+      "readme.txt",
+      "style.css",
+      "screenshot.png"
+    ]
+  }
+}
